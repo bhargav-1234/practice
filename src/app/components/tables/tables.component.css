@@ -1,0 +1,15 @@
+a {
+  color: aqua;
+}
+a:hover {
+  color: brown;
+}
+td {
+  color: chartreuse;
+}
+td:hover {
+  color: red;
+}
+nz-table tbody tr:hover td {
+  background-color: yellow;
+}
