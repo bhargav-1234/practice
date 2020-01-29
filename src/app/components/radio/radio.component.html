@@ -1,0 +1,13 @@
+<div>
+  <nz-radio-group [(ngModel)]="radioValue">
+    <label nz-radio [nzValue]="o.value" *ngFor="let o of options">{{
+      o.label
+    }}</label>
+  </nz-radio-group>
+  <h2>choose one:</h2>
+  <nz-radio-group [(ngModel)]="radioValue">
+    <label nz-radio [nzValue]="l.value" *ngFor="let l of options2">{{
+      l.label
+    }}</label>
+  </nz-radio-group>
+</div>

@@ -12,12 +12,27 @@ import { registerLocaleData } from "@angular/common";
 import en from "@angular/common/locales/en";
 import { NzCarouselModule } from "ng-zorro-antd/carousel";
 import { CarouselComponent } from "./components/carousel/carousel.component";
-import { CarouselPageComponent } from './pages/carousel-page/carousel-page.component';
+import { CarouselPageComponent } from "./pages/carousel-page/carousel-page.component";
+import { NzRadioModule } from "ng-zorro-antd/radio";
+import { RadioComponent } from "./components/radio/radio.component";
+import { RadiopageComponent } from "./pages/radiopage/radiopage.component";
+import { NzRateModule } from "ng-zorro-antd/rate";
 
 registerLocaleData(en);
+import { from } from "rxjs";
+import { StarComponent } from "./components/star/star.component";
+import { StarpageComponent } from "./pages/starpage/starpage.component";
 
 @NgModule({
-  declarations: [AppComponent, CarouselComponent, CarouselPageComponent],
+  declarations: [
+    AppComponent,
+    CarouselComponent,
+    CarouselPageComponent,
+    RadioComponent,
+    RadiopageComponent,
+    StarComponent,
+    StarpageComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -26,7 +41,9 @@ registerLocaleData(en);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    NzCarouselModule
+    NzCarouselModule,
+    NzRadioModule,
+    NzRateModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
