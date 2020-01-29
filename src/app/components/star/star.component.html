@@ -3,4 +3,5 @@
 <nz-rate [ngModel]="2.5" nzAllowHalf></nz-rate>
 <h1>Rating Of Others:</h1>
 
-<nz-rate [ngModel]="2.5" nzAllowHalf></nz-rate>
+<nz-rate [ngModel]="0" nzAllowHalf [nzCharacter]="characterIcon"></nz-rate>
+<ng-template #characterIcon><i nz-icon nzType="heart"></i></ng-template>

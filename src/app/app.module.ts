@@ -17,11 +17,14 @@ import { NzRadioModule } from "ng-zorro-antd/radio";
 import { RadioComponent } from "./components/radio/radio.component";
 import { RadiopageComponent } from "./pages/radiopage/radiopage.component";
 import { NzRateModule } from "ng-zorro-antd/rate";
-
+import { NzFormModule } from "ng-zorro-antd/form";
+import { ReactiveFormsModule } from "@angular/forms";
 registerLocaleData(en);
 import { from } from "rxjs";
 import { StarComponent } from "./components/star/star.component";
 import { StarpageComponent } from "./pages/starpage/starpage.component";
+import { FormpageComponent } from "./pages/formpage/formpage.component";
+import { FormComponent } from "./components/form/form.component";
 
 @NgModule({
   declarations: [
@@ -31,7 +34,9 @@ import { StarpageComponent } from "./pages/starpage/starpage.component";
     RadioComponent,
     RadiopageComponent,
     StarComponent,
-    StarpageComponent
+    StarpageComponent,
+    FormpageComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,9 @@ import { StarpageComponent } from "./pages/starpage/starpage.component";
     BrowserAnimationsModule,
     NzCarouselModule,
     NzRadioModule,
-    NzRateModule
+    NzRateModule,
+    NzFormModule,
+    ReactiveFormsModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

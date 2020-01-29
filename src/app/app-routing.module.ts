@@ -3,11 +3,13 @@ import { Routes, RouterModule } from "@angular/router";
 import { CarouselPageComponent } from "./pages/carousel-page/carousel-page.component";
 import { RadiopageComponent } from "./pages/radiopage/radiopage.component";
 import { StarpageComponent } from "./pages/starpage/starpage.component";
+import { FormpageComponent } from "./pages/formpage/formpage.component";
 const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "/welcome" },
   { path: "carousel", component: CarouselPageComponent },
   { path: "radio", component: RadiopageComponent },
   { path: "star", component: StarpageComponent },
+  { path: "form", component: FormpageComponent },
   {
     path: "welcome",
     loadChildren: () =>
