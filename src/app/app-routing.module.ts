@@ -4,12 +4,14 @@ import { CarouselPageComponent } from "./pages/carousel-page/carousel-page.compo
 import { RadiopageComponent } from "./pages/radiopage/radiopage.component";
 import { StarpageComponent } from "./pages/starpage/starpage.component";
 import { FormpageComponent } from "./pages/formpage/formpage.component";
+import { StepspageComponent } from "./pages/stepspage/stepspage.component";
 const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "/welcome" },
   { path: "carousel", component: CarouselPageComponent },
   { path: "radio", component: RadiopageComponent },
   { path: "star", component: StarpageComponent },
   { path: "form", component: FormpageComponent },
+  { path: "steps", component: StepspageComponent },
   {
     path: "welcome",
     loadChildren: () =>
