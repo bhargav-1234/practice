@@ -5,6 +5,7 @@ import { RadiopageComponent } from "./pages/radiopage/radiopage.component";
 import { StarpageComponent } from "./pages/starpage/starpage.component";
 import { FormpageComponent } from "./pages/formpage/formpage.component";
 import { StepspageComponent } from "./pages/stepspage/stepspage.component";
+import { TimelinepageComponent } from "./pages/timelinepage/timelinepage.component";
 const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "/welcome" },
   { path: "carousel", component: CarouselPageComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: "star", component: StarpageComponent },
   { path: "form", component: FormpageComponent },
   { path: "steps", component: StepspageComponent },
+  { path: "time", component: TimelinepageComponent },
   {
     path: "welcome",
     loadChildren: () =>

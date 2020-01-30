@@ -28,7 +28,9 @@ import { FormpageComponent } from "./pages/formpage/formpage.component";
 import { FormComponent } from "./components/form/form.component";
 import { StepsComponent } from "./components/steps/steps.component";
 import { StepspageComponent } from "./pages/stepspage/stepspage.component";
-
+import { TimelinepageComponent } from "./pages/timelinepage/timelinepage.component";
+import { TimelineComponent } from "./components/timeline/timeline.component";
+import { NzTimelineModule } from "ng-zorro-antd/timeline";
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +43,9 @@ import { StepspageComponent } from "./pages/stepspage/stepspage.component";
     FormpageComponent,
     FormComponent,
     StepsComponent,
-    StepspageComponent
+    StepspageComponent,
+    TimelinepageComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +60,8 @@ import { StepspageComponent } from "./pages/stepspage/stepspage.component";
     NzRateModule,
     NzFormModule,
     ReactiveFormsModule,
-    NzStepsModule
+    NzStepsModule,
+    NzTimelineModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
